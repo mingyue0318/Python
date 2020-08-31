@@ -1,9 +1,14 @@
 {
-    "python.pythonPath": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
+    "python.pythonPath": "/usr/local/bin/python3",
     "python.formatting.provider": "yapf",
     "python.autoComplete.extraPaths": [
         "~/.local/lib/Google/google_appengine",
         "~/.local/lib/Google/google_appengine/lib/flask-0.12"
     ],
-    "python.autoComplete.addBrackets": true
+    "python.autoComplete.addBrackets": true,
+    "python.linting.enabled": true,
+    "python.formatting.autopep8Path": "yapf",
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.pylintEnabled": true
 }
