@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
+    "python.formatting.provider": "yapf",
+    "python.autoComplete.extraPaths": [
+        "~/.local/lib/Google/google_appengine",
+        "~/.local/lib/Google/google_appengine/lib/flask-0.12"
+    ],
+    "python.autoComplete.addBrackets": true
+}
