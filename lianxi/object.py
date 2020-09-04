@@ -4,21 +4,103 @@ version:
 Author: sueRimn
 Date: 2020-09-04 11:04:31
 LastEditors: sueRimn
-LastEditTime: 2020-09-04 11:14:34
+LastEditTime: 2020-09-04 11:20:05
 '''
+
+
 class MyClass:
     """ 一个简单的类实例"""
     i = 12345
+
     def f(self):
         return "hello world"
+
 
 # 实例化类
 x = MyClass()
 
 
 class Complex:
-    def __init__(self, realpart,imagpart):
+    def __init__(self, realpart, imagpart):
         self.r = realpart
         self.i = imagpart
-x = Complex(3.0,-4.5)
-print(x.r,x.i)
+
+
+x = Complex(3.0, -4.5)
+print(x.r, x.i)
+
+
+class Test:
+    def prt(self):
+        print(self)
+        print(self.__class__)
+
+
+t = Test()
+t.prt()
+
+
+class people:
+    # 定义基本属性
+    name = ''
+    age = 0
+    # 定义私有属性
+    __weight = 0
+
+    # 定义构造函数
+    def __init__(self, n, a, w):
+        self.name = n
+        self.age = a
+        self.__weight = w
+
+    def speak(self):
+        print("%s 说：我 %d 岁。" % (self.name, self.age))
+
+
+# 继承
+
+
+#单继承示例
+class student(people):
+    grade = ''
+
+    def __init__(self, n, a, w, g):
+        #调用父类的构函
+        people.__init__(self, n, a, w)
+        self.grade = g
+
+    #覆写父类的方法
+    def speak(self):
+        print("%s说：我%d岁了，我再读%d年级" % (self.name, self.age, self.grade))
+
+
+s = student('ken', 10, 60, 3)
+s.speak()
+
+
+#另一个类，多重继承之前的准备
+class speaker:
+    topic = ''
+    name = ''
+
+    def __init__(self, n, t):
+        self.name = n
+        self.topic = t
+
+    def speak(self):
+        print("我叫 %s，我是一个演说家，我演讲的主题是 %s" % (self.name, self.topic))
+
+
+#多重继承
+class sample(speaker, student):
+    a = ''
+
+    def __init__(self, n, a, w, g, t):
+        student.__init__(self, n, a, w, g)
+        speaker.__init__(self, n, t)
+test = sample('Tim',25,80,4,'Python');
+test.speak()
+
+
+
+#方法重写
