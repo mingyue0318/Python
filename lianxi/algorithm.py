@@ -4,7 +4,7 @@ version:
 Author: sueRimn
 Date: 2020-09-11 15:52:29
 LastEditors: sueRimn
-LastEditTime: 2020-09-15 10:49:42
+LastEditTime: 2020-09-25 09:38:31
 '''
 
 ### 二分查找
@@ -62,4 +62,3 @@ def partition(arr,low,high):
             arr[i],arr[j] = arr[j],arr[i]
     arr[i+1],arr[high] = arr[high],arr[i+1]
     return (i+1)
-
