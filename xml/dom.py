@@ -1,11 +1,3 @@
-'''
-Author: your name
-Date: 2020-09-29 11:04:05
-LastEditTime: 2020-09-30 14:46:26
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
-FilePath: /Python/xml/dom.py
-'''
 #!/usr/bin/python3
 
 from xml.dom.minidom import parse
