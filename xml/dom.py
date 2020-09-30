@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2020-09-29 11:04:05
+LastEditTime: 2020-09-30 14:46:26
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: /Python/xml/dom.py
+'''
 #!/usr/bin/python3
 
 from xml.dom.minidom import parse
@@ -26,3 +34,8 @@ for movie in movies:
     print("Rating: %s" % rating.childNodes[0].data)
     description = movie.getElementsByTagName('description')[0]
     print("Description: %s" % description.childNodes[0].data)
+def funcname(parameter_list):
+    """
+    docstring
+    """
+    pass
